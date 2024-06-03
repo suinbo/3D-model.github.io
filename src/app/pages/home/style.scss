@@ -1,17 +1,32 @@
 .navigation {
     position: absolute;
     top: 0;
-    right: 0;
-    background-color: #4e4e4e;
-    padding: 16px;
-    margin: 30px;
+    right: 30px;
+    background-color: #3a3a3a;
+    padding: 14px;
+    margin: 20px;
     border-radius: 12px;
 
+    display: flex;
+    flex-direction: column;
+
     > ul {
+        font-size: 14px;
+
         .item {
             cursor: pointer;
             padding: 8px;
             color: #fff;
         }
     }
+}
+
+.opener {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #ebebeb;
+    z-index: 1;
+    margin: 20px;
 }

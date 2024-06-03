@@ -1,7 +1,7 @@
-import useRender, { ThreeProp } from "@/hooks/useRender"
+import useRenderSingle from "@/hooks/useRenderSingle"
 
-const ThreeDimension = ({ renderFn }: { renderFn: ({ scene, camera, renderer }: ThreeProp) => void }) => {
-    const containerRef = useRender(renderFn)
+const ThreeDimension = ({ value }: { value: { geometry: any; zPosition?: number } }) => {
+    const containerRef = useRenderSingle(value)
 
     return <div ref={containerRef} />
 }
